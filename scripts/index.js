@@ -1,12 +1,25 @@
-function laCajaDePandora(num) {
-    if (num % 2 === 0) {  
-        var binary_num = num.toString(2);
-        return binary_num;
+
+function laCajaDePandora(numero){
+    if (Number.isInteger(numero)) {
+        if (numero % 2 === 0) {  
+            return numero.toString(2);
+        } else {
+            return numero.toString(16);
+        }
     } else {
-        // Convert odd number to hexadecimal
-        var hexa_num = num.toString(16);
-        return hexa_num;
+        return "El parámetro no es un número entero.";
     }
 }
 
 console.log(laCajaDePandora(8));
+
+function datos(){
+    return{
+        nombre: "Gonzalo",
+        edad:"19 años",
+        nacionalidad: "Argentina",
+    };
+}
+
+console.log(datos());
+
