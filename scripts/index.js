@@ -11,3 +11,11 @@ function laCajaDePandora(numero){
 }
 console.log(laCajaDePandora(4));
 console.log(laCajaDePandora(37));
+function datos(){
+    return{
+        nombre: "Gonzalo",
+        edad:"19 años",
+        nacionalidad: "Argentina",
+    };
+}
+console.log(datos());
