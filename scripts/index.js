@@ -1,3 +1,4 @@
+
 function laCajaDePandora(numero){
     if (Number.isInteger(numero)) {
         if (numero % 2 === 0) {  
@@ -9,8 +10,9 @@ function laCajaDePandora(numero){
         return "El parámetro no es un número entero.";
     }
 }
-console.log(laCajaDePandora(4));
-console.log(laCajaDePandora(37));
+
+console.log(laCajaDePandora(8));
+
 function datos(){
     return{
         nombre: "Gonzalo",
@@ -18,4 +20,6 @@ function datos(){
         nacionalidad: "Argentina",
     };
 }
+
 console.log(datos());
+
